@@ -8,3 +8,16 @@ function nextSlide() {
     currentSlide = (currentSlide + 1) % slides.length;
     slides[currentSlide].style.display = 'block';
 }
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+
+hamburgerMenu.addEventListener('click', () => {
+  dropdownMenu.classList.toggle('open');
+});
+
+document.addEventListener('click', (event) => {
+  const targetElement = event.target;
+  if (!targetElement.closest('.hamburger-menu') && !targetElement.closest('.dropdown-menu')) {
+    dropdownMenu.classList.remove('open');
+  }
+});
