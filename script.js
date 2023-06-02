@@ -8,6 +8,7 @@ function nextSlide() {
     currentSlide = (currentSlide + 1) % slides.length;
     slides[currentSlide].style.display = 'block';
 }
+
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const dropdownMenu = document.querySelector('.dropdown-menu');
 
@@ -21,3 +22,31 @@ document.addEventListener('click', (event) => {
     dropdownMenu.classList.remove('open');
   }
 });
+
+const video = document.getElementById('video');
+const image = document.getElementById('image');
+
+function showVideo() {
+    video.style.display = 'block';
+    image.style.display = 'none';
+    video.play();
+}
+
+function showImage() {
+    video.style.display = 'none';
+    image.style.display = 'block';
+}
+
+// Função para alternar entre o vídeo e a imagem
+function toggleMedia() {
+    showVideo();
+    video.addEventListener('ended', function() {
+        showImage();
+        setTimeout(function() {
+            showVideo();
+        }, 3000);
+    });
+}
+
+// Iniciar a alternância do media
+toggleMedia();
