@@ -24,13 +24,13 @@
         z-index: 100;
         padding: 0px 25px 0px 25px;
     }   
-
+    /* Imagem do Header */
     .logo img {
         max-width: 100px;
     }
 
 
-
+    /* atalhos do header */
     nav ul.menu {
         list-style-type: none;
         display: flex;
@@ -51,7 +51,8 @@
     nav ul.menu li a:hover {
         color: #ffd700;
     }
-
+    /*----------------------------*/
+    /* Hamburguer */
     .hamburger-menu {
         display: flex;
         flex-direction: column;
@@ -62,6 +63,7 @@
         cursor: pointer;
         z-index: 1;
         margin-right: 65px;
+        transition: transform 2s ease;
     }
     .banner {
         height: 750px;
