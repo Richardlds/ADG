@@ -1,356 +1,402 @@
-    /* Estilos gerais */
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        color: #333;
-    }
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
 
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-    }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-    /* Estilos para o cabeçalho */
-    header {
-        background-color: #002147;
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 100;
-        padding: 0px 25px 0px 25px;
-    }   
-    /* Imagem do Header */
-    .logo img {
-        max-width: 100px;
-    }
+/* Estilos para o cabeçalho */
+header {
+    background-color: #002147;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 0px 25px 0px 25px;
+}
 
+/* Imagem do Header */
+.logo img {
+    max-width: 100px;
+}
 
-    /* atalhos do header */
-    nav ul.menu {
-        list-style-type: none;
-        display: flex;
-    }
+/* atalhos do header */
+nav ul.menu {
+    list-style-type: none;
+    display: flex;
+}
 
-    nav ul.menu li {
-        margin-right: 35px;
-        padding-top: 40px;
-    }
+nav ul.menu li {
+    margin-right: 35px;
+    padding-top: 40px;
+}
 
-    nav ul.menu li a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-        transition: color 0.3s ease;
-    }
+nav ul.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
 
-    nav ul.menu li a:hover {
-        color: #ffd700;
-    }
-    /*----------------------------*/
-    /* Hamburguer */
-    .hamburger-menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 30px;
-        height: 20px;
-        cursor: pointer;
-        z-index: 1;
-        margin-right: 65px;
-        transition: transform 2s ease;
-    }
-    .banner {
-        height: 750px;
-        width: auto;
-        overflow: hidden;
-    }
+nav ul.menu li a:hover {
+    color: #ffd700;
+}
 
-    .media-container {
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
+/*----------------------------*/
+/* Hamburguer */
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1;
+    margin-right: 65px;
+    transition: transform 2s ease;
+}
 
-    #video, #image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+.banner {
+    height: 750px;
+    width: auto;
+    overflow: hidden;
+}
 
-    #video {
-        display: block;
-    }
+.media-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 
-    #image {
-        display: none;
-    }
+#video,
+#image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-    .news-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-      }
-      
-    .news{
-        background-color: #eceaea;
-       height: auto;
-       
-    }
+#video {
+    display: block;
+}
 
-    .news h2{
-        justify-content: center;
-        display: flex;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 36px;
-        margin:0px;
-        color: #c5a803;
-        padding: 50px 0px 50px 0px;
-        
-        }
-    
-    .news h3{
-        justify-content: center;
-        display: flex;
-        margin: 0px;
-        padding-bottom: 60px;
+#image {
+    display: none;
+}
 
-    }    
-        .news img{
-            height: auto;
-            width: auto;
-            display: flex;
-            padding: 0px 80px 0px 80px
-        }
+.news-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .bar {
-        width: 100%;
-        height: 3px;
-        background-color: #fff;
-        transition: transform 0.3s ease;
-    }
+.news {
+    background-color: #eceaea;
+    height: auto;
+}
 
-    .company-info h1 {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: #fff;
-        padding: 10px 0;
-        font-style: normal;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-    }
+.news h2 {
+    justify-content: center;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    margin: 0px;
+    color: #c5a803;
+    padding: 50px 0px 50px 0px;
+}
 
-    .company-info{
-        position: relative;
-        text-align:center;
-        justify-items: center;
-        background-color: black;
-        height  : 500px;
-    
-        
-    }
-    .company-info img{
-        width:100%;
-        height: 500px;
-        opacity: 20%;
-        
-    }
-    .company-info p{
-        position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgb(255, 255, 255);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 18px;
-    }
+.news h3 {
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+    padding-bottom: 60px;
+}
 
-    .dropdown-menu {
-        display: none;
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: 200px;
-        background-color: #002147;
-        padding: 20px;
-        overflow-y: auto;
-        z-index: 101;
-        transform: translateX(100%);
-        transition: transform 0.3s ease;
-    }
+.news img {
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 0px 80px 0px 80px;
+}
 
-    .dropdown-menu.open {
-        transform: translateX(0%);
-    }
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
 
-    .dropdown-menu a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 18px;
-        margin-bottom: 10px;
-        display: block;
-        transition: color 0.3s ease;
-    }
+.company-info h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    font-style: normal;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
-    .dropdown-menu a:hover {
-        color: #ffd700;
-    }
-    .footer-content{  
+.company-info {
+    position: relative;
+    text-align: center;
+    justify-items: center;
+    background-color: black;
+    height: 500px;
+}
+
+.company-info img {
+    width: 100%;
+    height: 500px;
+    opacity: 20%;
+}
+
+.company-info p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: #002147;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 101;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.dropdown-menu.open {
+    transform: translateX(0%);
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    color: #ffd700;
+}
+
+.footer-content {
     background-color: #002147;
     padding: 60px 30px 60px 30px;
     margin: 0px;
     display: flex;
     justify-content: space-between;
     color: #ffffff;
+}
+
+.footer-content h3 {
+    padding: 0px;
+    margin: 0px;
+    border-bottom: #ff0000;
+}
+
+.footer-section img {
+    width: 170px;
+}
+
+.bottom-footer {
+    background-color: #333;
+    color: #eceaea;
+    padding: 10px 10px 10px 10px;
+    border-top: 3px solid rgb(109, 109, 109);
+}
+
+.bottom-footer p,
+h6 {
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+}
+
+.contato-info{
+    background-color: #ffbaba;
+    color: #caac01;
+    padding: 80px 0px 0px 0px;
+    display: flex;
+    justify-content: center;    
+   
+}
+.quadrado1{
+    background-color: #002147;
+    background-color: #0f13ff;
+    width: 400px;
+    height: 400px;
+    margin: 80px 0px 50px 0px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 2%;
+    position: relative;
+    left: 10px;
+    
+}
+.quadrado2{
+    background-color: #03009e;
+    width: 400px;
+    height: 400px;
+    margin: 80px 0px 50px 0px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 2%;
+}
+
+.contato-info h1{
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+/* Estilos adicionais para a página suspensa */
+.open {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
     }
-    .footer-content h3{
+    nav ul.menu {
+        display: none;
+    }
+    nav ul.menu.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #002147;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+    nav ul.menu li {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+    .news-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .company-info h1 {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        padding: 10px 0;
+        font-style: normal;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .company-info {
+        position: relative;
+        text-align: center;
+        justify-items: center;
+        background-color: black;
+        height: 500px;
+    }
+
+    .company-info img {
+        width: 100%;
+        height: 500px;
+        opacity: 20%;
+    }
+
+    .company-info p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(255, 255, 255);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+    }
+
+    .footer-content h3 {
         padding: 0px;
         margin: 0px;
         border-bottom: #ff0000;
+        font-size: 14px;
     }
 
-    .footer-section img{
-        width: 170px;
+    .footer-content p {
+        font-size: 10px;
     }
-    .bottom-footer{
+
+    .footer-section img {
+        width: 100px;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .bottom-footer {
         background-color: #333;
         color: #eceaea;
         padding: 10px 10px 10px 10px;
         border-top: 3px solid rgb(109, 109, 109);
     }
-    .bottom-footer p,h6{
+
+    .bottom-footer p,
+    h6 {
         padding: 5px;
         margin: 0px;
         text-align: center;
     }
-    /* Estilos adicionais para a página suspensa */
-    .open {
-        display: block;
-    }
-    @media (max-width: 768px) {
-        .hamburger-menu {
-            display: flex;
-        }
-        nav ul.menu {
-            display: none;
-        }
-        nav ul.menu.open {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #002147;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            padding: 10px;
-        }
-        nav ul.menu li {
-            margin-right: 0;
-            padding: 10px 0;
-        }
-        .news-container {
-            flex-direction: column;
-            text-align: center;
-          }
-        
-          .company-info h1 {
-            position: absolute;
-            top: 10%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: #fff;
-            padding: 10px 0;
-            font-style: normal;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-        }
-    
-        .company-info{
-            position: relative;
-            text-align:center;
-            justify-items: center;
-            background-color: black;
-            height  : 500px;
-        
-            
-        }
-        .company-info img{
-            width:100%;
-            height: 500px;
-            opacity: 20%;
-            
-        }
-        .company-info p{
-            position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: rgb(255, 255, 255);
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font-size: 16px;
-        }
-        .footer-content h3 {
-            padding: 0px;
-            margin: 0px;
-            border-bottom: #ff0000;
-            font-size: 14px;
-        }
-        .footer-content p {
-            font-size: 10px;
-        }
-    
-        .footer-section img{
-            width: 100px;
-        }
-        .footer-section{
-            
-            text-align: center;
-            
-            
+}
 
-        }
-        .bottom-footer{
-            background-color: #333;
-            color: #eceaea;
-            padding: 10px 10px 10px 10px;
-            border-top: 3px solid rgb(109, 109, 109);
-        }
-        .bottom-footer p,h6{
-            padding: 5px;
-            margin: 0px;
-            text-align: center;
-        }
+/* Responsividade para telas médias */
+@media (min-width: 770px) and (max-width: 900px) {
+    /* Adicione aqui as regras específicas para telas médias */
+    .news-container {
+        flex-direction: row;
+        text-align: center;
     }
-    
-    /* Responsividade para telas médias */
-    @media (min-width: 770px) and (max-width: 900px) {
-        /* Adicione aqui as regras específicas para telas médias */
-        .news-container {
-            flex-direction:row;
-            text-align: center;
-          }
-          .news img{
-            height: 120px;
-            width: auto;
-            display: flex;
-            padding: 0px 80px 0px 80px
-        }
-            
-    
-    /* Responsividade para telas grandes */
-    @media (min-width: 901px) {
-        /* Adicione aqui as regras específicas para telas grandes */
-    }}
+    .news img {
+        height: 120px;
+        width: auto;
+        display: flex;
+        padding: 0px 80px 0px 80px;
+    }
+}
+
+/* Responsividade para telas grandes */
+@media (min-width: 901px) {
+    /* Adicione aqui as regras específicas para telas grandes */
+}
