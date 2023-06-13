@@ -1,14 +1,36 @@
 :root{
-    --cor-azul: #334468;
+    --cor-azul: rgb(51, 68, 104);
     --cor-azulclaro:rgb(58 91 139);
-    --cor-dourado: rgb(189 166 99);
+    --cor-dourado: rgb(189, 166, 99);
+      
+}
+@font-face {
+    font-family: 'normal';
+    src: url(font/futura_bk_bt/FutuBk.ttf),
+         url(font/futura_bk_bt/FutuBkIt.ttf),
+         url(font/futura_bk_bt/Futura_20Medium_20BT.ttf),
+         url(font/futura_bk_bt/FuturaBookBT.ttf),
+         url(font/futura_bk_bt/FuturaBookItalicBT.ttf);
+}
+
+@font-face {
+    font-family: 'negrito';
+    src: url(font/futura_md_bt/FutuBd.ttf),
+         url(font/futura_md_bt/FutuBdIt.ttf),
+         url(font/futura_md_bt/FutuMd.ttf),
+         url(font/futura_md_bt/FutuMdIt.ttf),
+         url(font/futura_md_bt/FUTURAB.TTF),
+         url(font/futura_md_bt/FuturaBoldBT.ttf),
+         url(font/futura_md_bt/FuturaBoldItalicBT.ttf),
+         url(font/futura_md_bt/FuturaMediumBT.ttf),
+         url(font/futura_md_bt/FuturaMediumItalicBT.ttf);
 }
 
 
 /* Estilos gerais */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'negrito';
     color: #000000;
 }
 
@@ -109,7 +131,7 @@ nav ul.menu li a:hover {
 .news h2 {
     justify-content: center;
     display: flex;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'negrito';
     font-size: 36px;
     margin: 0px;
     color: var(--cor-dourado);
@@ -146,7 +168,7 @@ nav ul.menu li a:hover {
     color: #fff;
     padding: 10px 0;
     font-style: normal;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'negrito';
 }
 
 .company-info {
@@ -169,8 +191,8 @@ nav ul.menu li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
+    font-family: 'normal';
 }
 
 .dropdown-menu {
@@ -213,6 +235,7 @@ nav ul.menu li a:hover {
     justify-content: space-between;
     color: #ffffff;
     font-size: small;
+    font-family: 'negrito';
 
 }
 .footer-content a {
@@ -363,7 +386,7 @@ h6 {
         left: 50%;
         transform: translate(-50%, -50%);
         color: rgb(255, 255, 255);
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 16px;
     }
 
