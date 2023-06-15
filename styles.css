@@ -283,30 +283,48 @@ h6 {
     justify-content: center;    
    
 }
-.quadrado1{
-    background-color: #002147;
-    background-color: #0f13ff;
-    width: 400px;
-    height: 400px;
-    margin: 80px 0px 50px 0px;
+.card-container {
     display: flex;
-    align-content: center;
-    justify-content: center;
-    border-radius: 2%;
-    position: relative;
-    left: 10px;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: 200px;
+    height: 300px;
+    background-color: var(--cor-azul);
+    border-radius: 10px;
+    margin: 150px 70px 10px 70px;
     
-}
-.quadrado2{
-    background-color: #03009e;
-    width: 400px;
-    height: 400px;
-    margin: 80px 0px 50px 0px;
+  }
+  
+  .card-imagem {
+    width: 150px;
+    height: 150px;
+    margin: 15px 15px 0px 15px;
+  }
+  
+  .imagem {
     display: flex;
-    align-content: center;
     justify-content: center;
-    border-radius: 2%;
-}
+  }
+  
+  .texto {
+    text-align: center;
+    margin: 0px;
+    color: #fff;
+  }
+  .texto h2{
+    margin: 0px;
+    font-size: 20px;
+    color: white;
+  }
+
+    .texto p{
+        font-size: small;
+        margin: 0px;
+        color: white;
+
+    }
 
 .contato-info h1{
     padding: 20px 0px 0px 0px;
