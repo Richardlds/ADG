@@ -1,13 +1,27 @@
-// Configuração para o slideshow do banner
-var slides = document.querySelectorAll('.slide');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide, 3000);
+const images = document.querySelectorAll('.banner img');
+let currentImageIndex = 0;
+images[currentImageIndex].classList.add('active');
 
-function nextSlide() {
-    slides[currentSlide].style.display = 'none';
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].style.display = 'block';
+function changeImage() {
+  images[currentImageIndex].classList.remove('active');
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+  images[currentImageIndex].classList.add('active');
 }
+
+setInterval(changeImage, 5000);
+function showPreviousImage() {
+  let newIndex = (currentImageIndex - 1 + images.length) % images.length;
+  changeImage(newIndex);
+}
+
+function showNextImage() {
+  let newIndex = (currentImageIndex + 1) % images.length;
+  changeImage(newIndex);
+}
+
+document.querySelector('.prev-button').addEventListener('click', showPreviousImage);
+document.querySelector('.next-button').addEventListener('click', showNextImage);
+
 
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const dropdownMenu = document.querySelector('.dropdown-menu');
@@ -22,3 +36,4 @@ document.addEventListener('click', (event) => {
     dropdownMenu.classList.remove('open');
   }
 });
+

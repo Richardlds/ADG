@@ -93,30 +93,97 @@ nav ul.menu li a:hover {
     cursor: pointer;
     z-index: 1;
     margin-right: 65px;
-    transition: transform 2s ease;
+    
 }
 
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+.dropdown-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: var(--cor-azulclaro);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 101;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.dropdown-menu.open {
+    transform: translateX(0%);
+}
+
+
+.dropdown-menu.open {
+    transform: translateX(0%);
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    
+}
+
+
+.dropdown-menu a:hover {
+    color: var(--cor-dourado);
+}
+.open {
+    display: block;
+}
+/*------------------------------*/
+/*Banner*/
 .banner {
-    height: 750px;
-    width: auto;
-   
-}
-
-.media-container {
     position: relative;
     width: 100%;
-    height: 100%;
-}
-#image {
+    height: 500px;
+    overflow: hidden;
+    margin: 100px 0px 0px 0px;
+  }
+  
+  .banner img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .banner img.active {
+    opacity: 1 ;
+  }
+  .slider-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 
-
+  }
+  
+  .slider-buttons button {
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 0px 5px 0px 5px;
+    color: var(--cor-dourado);
+    background-color: var(--cor-azul);
+    border-radius: 20px;
+    cursor: pointer;
+  } 
+/*----------------------------*/
+/* NEWS */
 .news-container {
     display: flex;
     justify-content: center;
@@ -151,14 +218,9 @@ nav ul.menu li a:hover {
     display: flex;
     padding: 0px 80px 0px 80px;
 }
+/*----------------------------------*/
 
-.bar {
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-    transition: transform 0.3s ease;
-}
-
+/*company*/
 .company-info h1 {
     position: absolute;
     top: 20%;
@@ -194,39 +256,9 @@ nav ul.menu li a:hover {
     font-size: 18px;
     font-family: 'normal';
 }
+/*---------------------------------------*/
 
-.dropdown-menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 200px;
-    background-color: var(--cor-azulclaro);
-    padding: 20px;
-    overflow-y: auto;
-    z-index: 101;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-}
-
-.dropdown-menu.open {
-    transform: translateX(0%);
-}
-
-.dropdown-menu a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    margin-bottom: 10px;
-    display: block;
-    transition: color 0.3s ease;
-}
-
-.dropdown-menu a:hover {
-    color: var(--cor-dourado);
-}
-
+/* Rodape */
 .footer-content {
     background-color: var(--cor-azul);
     padding: 40px 30px 20px 30px;
@@ -260,7 +292,9 @@ nav ul.menu li a:hover {
    display: flex;
    justify-content: center;
 }
+/*--------------------------------------*/
 
+/* subrodape */
 .bottom-footer {
     background-color: #333;
     color: #eceaea;
@@ -274,7 +308,8 @@ h6 {
     margin: 0px;
     text-align: center;
 }
-
+/*-----------------------*/
+/*contato*/
 .contato-info{
     background-color: #ffbaba;
     color: var(--cor-dourado);
@@ -283,6 +318,14 @@ h6 {
     justify-content: center;    
    
 }
+.contato-info h1{
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+/*--------------------------------------------*/
+/*Equipe html*/
 .card-container {
     display: flex;
     justify-content: space-between;
@@ -294,6 +337,7 @@ h6 {
     background-color: var(--cor-azul);
     border-radius: 10px;
     margin: 150px 70px 10px 70px;
+    transition-duration:200ms;
     
   }
   
@@ -324,21 +368,25 @@ h6 {
     .texto p{
         font-size: small;
         margin: 0px;
-        color: white;
+        color: transparent;
         cursor:default;
+        display: none;
 
     }
-
-.contato-info h1{
-    padding: 20px 0px 0px 0px;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-}
+    .card:hover{
+        height: 400px;
+        width: 300px;
+        
+        
+    }
+    .card:hover p{
+        display:block;
+        color: #eceaea;
+    }
+    
+/*-----------------------------------------------------*/
 /* Estilos adicionais para a página suspensa */
-.open {
-    display: block;
-}
+
 .whats img{
     width: 70px;
     z-index: 9999;
@@ -347,7 +395,7 @@ h6 {
     right: 20px;
     
 }
-
+/* telas pequenas */
 @media (max-width: 768px) {
     .hamburger-menu {
         display: flex;
@@ -444,7 +492,7 @@ h6 {
         text-align: center;
     }
 }
-
+/*------------------------------------------------*/
 /* Responsividade para telas médias */
 @media (min-width: 770px) and (max-width: 900px) {
     /* Adicione aqui as regras específicas para telas médias */
@@ -459,6 +507,7 @@ h6 {
         padding: 0px 80px 0px 80px;
     }
 }
+/*-------------------------------------------------------*/
 
 /* Responsividade para telas grandes */
 @media (min-width: 901px) {
