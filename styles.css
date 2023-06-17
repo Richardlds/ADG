@@ -34,6 +34,7 @@ body {
     color: #000000;
 }
 
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -191,25 +192,27 @@ nav ul.menu li a:hover {
 }
 
 .news {
-    background-color: #eceaea;
+    background-color: var(--cor-azulclaro);
     height: auto;
+    padding: 50px 0px 0px 0px;
 }
 
-.news h2 {
+.news h1 {
     justify-content: center;
     display: flex;
     font-family: 'negrito';
     font-size: 36px;
     margin: 0px;
     color: var(--cor-dourado);
-    padding: 50px 0px 50px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .news h3 {
     justify-content: center;
     display: flex;
     margin: 0px;
-    padding-bottom: 60px;
+    padding: 0px 0px 0px 0px;
+    color: white;
 }
 
 .news img {
@@ -261,7 +264,7 @@ nav ul.menu li a:hover {
 /* Rodape */
 .footer-content {
     background-color: var(--cor-azul);
-    padding: 40px 30px 20px 30px;
+    padding: 10px 30px 10px 30px;
     margin: 0px;
     display: flex;
     justify-content: space-between;
