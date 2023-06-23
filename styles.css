@@ -289,6 +289,7 @@ nav ul.menu li a:hover {
     border-bottom: #ff0000;
     display: flex;
     align-items: center;
+    cursor: default;
     
 }
 .footer-content p {
@@ -340,7 +341,7 @@ h6 {
     background-color: var(--cor-azul);
     border-radius: 10px;
     margin: 150px 70px 10px 70px;
-    transition-duration:200ms;
+    transition-duration:400ms;
     
   }
   
@@ -461,6 +462,7 @@ h6 {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 16px;
     }
+    
 
     .footer-content h3 {
         padding: 0px;
@@ -493,6 +495,13 @@ h6 {
         padding: 5px;
         margin: 0px;
         text-align: center;
+    }
+
+    .card-container{
+        flex-direction: column;
+    }
+    .menu{
+        display: none;
     }
 }
 /*------------------------------------------------*/
