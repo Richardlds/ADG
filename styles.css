@@ -340,7 +340,7 @@ h6 {
     height: 300px;
     background-color: var(--cor-azul);
     border-radius: 10px;
-    margin: 150px 70px 10px 70px;
+    margin: 150px 70px 40px 70px;
     transition-duration:400ms;
     
   }
@@ -387,6 +387,16 @@ h6 {
         display:block;
         color: #eceaea;
     }
+    .sobrecard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Ajuste conforme necessário */
+      }
+
+      
+      
     
 /*-----------------------------------------------------*/
 /* Estilos adicionais para a página suspensa */
