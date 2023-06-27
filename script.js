@@ -37,3 +37,38 @@ function showNextImage() {
 document.querySelector('.prev-button').addEventListener('click', showPreviousImage);
 document.querySelector('.next-button').addEventListener('click', showNextImage);
   
+
+
+window.addEventListener('DOMContentLoaded', function() {
+  var menuLinks = document.querySelectorAll('.menu a')
+
+  menuLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      var targetSection = document.querySelector(this.getAttribute('href'));
+      window.scrollTo({
+        top: targetSection.offsetTop,
+        behavior: 'smooth'
+      });
+    });
+  });
+});
+window.addEventListener('DOMContentLoaded', function() {
+  var scrollToTopElement = document.querySelector('.voltatopo');
+
+  scrollToTopElement.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    var targetSection = document.querySelector('#inicio');
+    var scrollOptions = {
+      top: targetSection.offsetTop,
+      behavior: 'smooth'
+    };
+
+    window.scrollTo(scrollOptions);
+  });
+});
+
+
+

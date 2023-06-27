@@ -1,7 +1,7 @@
 :root{
     --cor-azul: rgb(51, 68, 104);
     --cor-azulclaro:rgb(58 91 139);
-    --cor-dourado: rgb(189, 166, 99);
+    --cor-dourado: #bda663;
       
 }
 @font-face {
@@ -47,10 +47,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     z-index: 100;
     padding: 0px 25px 0px 25px;
 }
@@ -150,7 +146,7 @@ nav ul.menu li a:hover {
     width: 100%;
     height: 500px;
     overflow: hidden;
-    margin: 100px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
   }
   
   .banner img {
@@ -187,14 +183,15 @@ nav ul.menu li a:hover {
 /* NEWS */
 .news-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 .news {
     background-color: var(--cor-azulclaro);
     height: auto;
-    padding: 50px 0px 0px 0px;
+    padding: 50px 15px 0px 15px;
 }
 
 .news h1 {
@@ -208,18 +205,24 @@ nav ul.menu li a:hover {
 }
 
 .news h3 {
-    justify-content: center;
+    justify-content: center;    
     display: flex;
     margin: 0px;
     padding: 0px 0px 0px 0px;
     color: white;
+    font-family: 'negrito';
+}
+.news p{
+    width: 300px;
+    font-family: 'normal';
+    color: #fff;
 }
 
 .news img {
-    height: auto;
+    height: 150px;
     width: auto;
     display: flex;
-    padding: 0px 80px 0px 80px;
+    padding: 5px 80px 0px 80px;
 }
 /*----------------------------------*/
 
@@ -318,11 +321,12 @@ h6 {
     color: var(--cor-dourado);
     padding: 100px 0px 0px 0px;
     display: flex;
-    justify-content: center;    
+    justify-content: center;   
+    
    
 }
 .quadrado{
-    width: 350px;
+    width: 600px;
     height: 300px;
     background-color:var(--cor-azulclaro);
     margin: 15px 10px 15px 10px ;
@@ -336,7 +340,8 @@ h6 {
 .quadrado h2{
     text-align: center;
     color: #eceaea;
-    margin: 10px 0px 0px 10px;
+    margin: 10px 0px 0px 50px;
+    font-size: 15px;
 }
 .texto-contato{
     display: flex;
@@ -348,7 +353,7 @@ h6 {
 }
 
 .quadrado img{
-    width: 50px;
+    width: 40px;
     display:block;
     padding: 10px 0px 0px 20px;
 }
@@ -362,11 +367,11 @@ h6 {
   }
   
   .card {
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     background-color: var(--cor-azul);
     border-radius: 10px;
-    margin: 150px 70px 40px 70px;
+    margin: 50px 70px 0px 70px;
     transition-duration:400ms;
     
   }
@@ -404,8 +409,8 @@ h6 {
 
     }
     .card:hover{
-        height: 400px;
-        width: 300px;
+        height: 500px;
+        width: 400px;
         
         
     }
@@ -426,6 +431,16 @@ h6 {
     bottom: 20px;
     right: 20px;
     
+}
+.voltatopo{
+    width: 70px;
+    z-index: 9999;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+}
+.voltatopo img{
+    width: 70px;
 }
 /* telas pequenas */
 @media (max-width: 768px) {
