@@ -80,65 +80,60 @@ nav ul.menu li a:hover {
 
 /*----------------------------*/
 /* Hamburguer */
-.hamburger-menu {
+.navbar {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger-menu {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     width: 30px;
     height: 20px;
     cursor: pointer;
-    z-index: 1;
-    margin-right: 65px;
-    
-}
+  }
 
-.bar {
+  .bar {
     width: 100%;
     height: 3px;
-    background-color: #fff;
-    transition: transform 0.3s ease;
-}
-.dropdown-menu {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .dropdown-menu {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
     width: 200px;
+    height: auto;
     background-color: var(--cor-azulclaro);
-    padding: 20px;
-    overflow-y: auto;
-    z-index: 101;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-}
+    margin: 100px 0 0 0;
+    z-index: 9999;
+    border-radius: 4px;
+  }
 
-.dropdown-menu.open {
-    transform: translateX(0%);
-}
+  .dropdown-menu.open {
+    display: block;
+   
+  }
 
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
-.dropdown-menu.open {
-    transform: translateX(0%);
-}
-
-.dropdown-menu a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
+  .dropdown-menu li {
     margin-bottom: 10px;
-    display: block;
-    
-}
+    text-align: center;
+  }
 
-
-.dropdown-menu a:hover {
-    color: var(--cor-dourado);
-}
-.open {
-    display: block;
-}
+  .dropdown-menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'negrito';
+  }
 /*------------------------------*/
 /*Banner*/
 .banner {
@@ -444,30 +439,47 @@ h6 {
 }
 /* telas pequenas */
 @media (max-width: 768px) {
-    .hamburger-menu {
-        display: flex;
-    }
-    nav ul.menu {
-        display: none;
-    }
-    nav ul.menu.open {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: var(--cor-azul);
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 10px;
-    }
-    nav ul.menu li {
-        margin-right: 0;
-        padding: 10px 0;
-    }
+   nav{
+   display: none; 
+   }
     .news-container {
         flex-direction: column;
         text-align: center;
+    }
+    .news {
+        background-color: var(--cor-azulclaro);
+        height: auto;
+        padding: 50px 15px 0px 15px;
+    }
+    
+    .news h1 {
+        justify-content: center;
+        display: flex;
+        font-family: 'negrito';
+        font-size: 20px;
+        margin: 0px;
+        color: var(--cor-dourado);
+        padding: 0px 0px 0px 0px;
+    }
+    
+    .news h3 {
+        justify-content: center;    
+        display: flex;
+        margin: 0px;
+        padding: 0px 0px 0px 0px;
+        color: white;
+        font-family: 'negrito';
+    }
+    .news p{
+        width: 300px;
+        font-family: 'normal';
+        color: #fff;
+    }
+    
+    .news img {
+        height: 130px;
+        width: auto;
+        display: flex;
     }
 
     .company-info h1 {
@@ -482,7 +494,7 @@ h6 {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     .banner{
-        height: 200px;
+        height: 250px;
     }
 
 
@@ -505,7 +517,7 @@ h6 {
         font-size: 16px;
         font-family: 'normal';
         height: 200px;
-        width: 400px;
+        width: 350px;
     }
     .company-info h1{
         font-family: 'negrito';
@@ -514,10 +526,10 @@ h6 {
     
 
     .footer-content h3 {
-        padding: 0px;
-        margin: 20px;
+        padding: 10px;
+        margin: 0px;
         border-bottom: #ff0000;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .footer-content p {
@@ -525,7 +537,7 @@ h6 {
     }
 
     .footer-section img {
-        width: 50px;
+        width: 25px;
     }
 
     .footer-section {
@@ -572,17 +584,17 @@ h6 {
        
     }
     .quadrado{
-        width: 300px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         background-color:var(--cor-azulclaro);
-        margin: 15px 10px 15px 10px ;
+        margin: 15px 5px 15px 5px ;
         border-radius: 7px;
         
     }
     .quadrado h2{
         text-align: center;
         color: #eceaea;
-        margin: 10px 0px 0px 50px;
+        margin: 10px 0px 0px 20px;
         font-size: 10px;
     }
     .texto-contato{
