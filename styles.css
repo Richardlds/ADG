@@ -537,6 +537,9 @@ h6 {
     .footer-content p {
         font-size: 10px;
     }
+    .footer-content{
+        padding: 5px;
+    }
 
     .footer-section img {
         width: 20px;
