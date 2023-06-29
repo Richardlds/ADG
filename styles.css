@@ -640,15 +640,127 @@ h6 {
 @media (min-width: 770px) and (max-width: 900px) {
     /* Adicione aqui as regras específicas para telas médias */
     .news-container {
-        flex-direction: row;
-        text-align: center;
+        justify-content: space-around;
+       
     }
+    nav ul.menu li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        transition: color 0.3s ease;
+        font-size: smaller;
+    }
+    .news-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .news {
+        background-color: var(--cor-azulclaro);
+        height: auto;
+        padding: 50px 20px 0px 20px;
+    }
+    
+    .news h1 {
+        justify-content: center;
+        display: flex;
+        font-family: 'negrito';
+        font-size: 36px;
+        margin: 0px;
+        color: var(--cor-dourado);
+        padding: 0px 0px 0px 0px;
+    }
+    
+    .news h3 {
+        justify-content: center;    
+        display: flex;
+        margin: 0px;
+        padding: 0px 0px 0px 0px;
+        color: white;
+        font-family: 'negrito';
+        font-size: 18px;
+    }
+    .news p{
+        width: 200px;
+        font-family: 'normal';
+        color: #fff;
+        font-size: 12px;
+        
+    }
+    
     .news img {
-        height: 120px;
+        height: 70px;
         width: auto;
         display: flex;
-        padding: 0px 80px 0px 80px;
+        padding: 5px 80px 0px 80px;
     }
+    .card-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .card {
+        width: 180px;
+        height: 250px;
+        background-color: var(--cor-azul);
+        border-radius: 10px;
+        margin: 30px 10px 0px 10px;
+        transition-duration:400ms;
+        
+      }
+      
+      .card-imagem {
+        width: 150px;
+        height: 150px;
+        margin: 15px 15px 0px 15px;
+      }
+      
+      .imagem {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .texto {
+        text-align: center;
+        margin: 0px;
+        color: #fff;
+        cursor: pointer;
+      }
+      .texto h2{
+        margin: 0px;
+        font-size: 20px;
+        color: white;
+        cursor:default;
+      }
+    
+        .texto p{
+            font-size: small;
+            margin: 0px;
+            color: transparent;
+            cursor:default;
+            display: none;
+    
+        }
+        .card:hover{
+            height: 300px;
+            width: 240px;
+            
+            
+        }
+        .card:hover p{
+            display:block;
+            color: #eceaea;
+        }
+        .banner img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 500px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+          }
+   
 }
 /*-------------------------------------------------------*/
 
