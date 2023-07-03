@@ -313,10 +313,10 @@ h6 {
 /*-----------------------*/
 /*contato*/
 .contato-info{
-    color: var(--cor-dourado);
+   background-image: linear-gradient(to bottom, var(--cor-azulclaro), var(--cor-azul));
     padding: 100px 0px 0px 0px;
     display: flex;
-    justify-content: center;   
+    justify-content: center;
     
    
 }
@@ -326,6 +326,7 @@ h6 {
     background-color:var(--cor-azulclaro);
     margin: 15px 10px 15px 10px ;
     border-radius: 7px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.144);
     
 }
 .quadrado h1{
@@ -359,7 +360,10 @@ h6 {
 .card-container {
     display: flex;
     justify-content: space-between;
-  }
+    background-image: linear-gradient(to bottom, var(--cor-azul) ,  var(--cor-azulclaro) );
+
+}
+
   
   .card {
     width: 300px;
@@ -368,6 +372,7 @@ h6 {
     border-radius: 10px;
     margin: 50px 70px 0px 70px;
     transition-duration:400ms;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.144);
     
   }
   
