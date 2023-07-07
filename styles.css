@@ -184,7 +184,7 @@ nav ul.menu li a:hover {
 }
 
 .news {
-    background-color: var(--cor-azulclaro);
+    background-image: linear-gradient(to bottom, var(--cor-azulclaro) , var(--cor-azul));
     height: auto;
     padding: 50px 15px 0px 15px;
 }
@@ -257,6 +257,9 @@ nav ul.menu li a:hover {
     font-size: 18px;
     font-family: 'normal';
 }
+
+
+
 /*---------------------------------------*/
 
 /* Rodape */
@@ -406,7 +409,11 @@ h6 {
         color: transparent;
         cursor:default;
         display: none;
-
+        padding-top: 10px;
+    }
+    .texto p1{
+        color: #ffffff;
+        padding-top: 20px;
     }
     .card:hover{
         height: 500px;
@@ -417,6 +424,13 @@ h6 {
     .card:hover p{
         display:block;
         color: #eceaea;
+        padding-top: 10px;
+    }
+    .card:hover p1{
+        display:none;
+        padding-top: 10px;
+        
+        
     }
     
       
